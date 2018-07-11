@@ -1,4 +1,4 @@
-package com.accenture.dockerDemo;
+package com.accenture;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
