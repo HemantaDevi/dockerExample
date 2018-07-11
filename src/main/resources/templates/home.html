@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Say Hello</title>
+</head>
+<body>
+	<h1>Say Hello</h1>
+	<form method="get" th:action="@{/processing}">
+		<input type="text" placeholder="Enter your name" name="name"/>
+		<input type="submit"/>
+	</form>
+	
+	<h1 th:if="${name}">
+		<span th:text="${name}"></span>
+	</h1>
+</body>
+</html> 
