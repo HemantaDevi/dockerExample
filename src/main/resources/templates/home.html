@@ -7,12 +7,14 @@
 <body>
 	<h1>Say Hello</h1>
 	<form method="get" th:action="@{/processing}">
-		<input type="text" placeholder="Enter your name" name="name"/>
+		<input type="text" placeholder="Enter text" name="text"/>
 		<input type="submit"/>
 	</form>
 	
-	<h1 th:if="${name}">
-		<span th:text="${name}"></span>
-	</h1>
+	<div th:if="${speech}">
+		<audio controls>
+			<source th:src="${speech}"/>
+		</audio>
+	</div>
 </body>
 </html> 
